@@ -1,4 +1,4 @@
-
+'use strict'
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
 
@@ -16,7 +16,6 @@ const homeHeight = home.offsetHeight;
 document.addEventListener("scroll", (event) => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
-
 
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener("scroll", (event) => {
