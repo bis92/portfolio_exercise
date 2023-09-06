@@ -36,4 +36,3 @@ navbarToggle.addEventListener('click', () => {
 navbarMenu.addEventListener('click', () => {
   navbarMenu.classList.remove('open');
 })
-

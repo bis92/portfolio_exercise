@@ -28,15 +28,16 @@
   <!-- Javascript -->
   <script type="module" src="src/main.js" defer></script>
   <script type="module" src="src/projects.js" defer></script>
+  <script type="module" src="src/active_menu.js" defer></script>
 </head>
-<body>
+<body class="root">
   <!-- Header -->
   <header>
     <div class="header">
       <div class="header__logo__navbars">
         <div class="header__logo">
           <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-          <h1 class="header__logo__title"><a href="#">BIS</a></h1>
+          <h1 class="header__logo__title"><a href="#home">BIS</a></h1>
         </div>
         <!-- <div class="header__nav__bars none">
           <i class="fa-solid fa-bars"></i>
@@ -44,12 +45,12 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu__item" href="#home">Home</a></li>
-          <li><a class="header__menu__item active" href="#about">About</a></li>
-          <li><a class="header__menu__item" href="#skills">Skills</a></li>
-          <li><a class="header__menu__item" href="#work">My work</a></li>
-          <li><a class="header__menu__item" href="#testimonial">Testimonials</a></li>
-          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+          <li><a class="header__menu__item" href="#home" data-value="home">Home</a></li>
+          <li><a class="header__menu__item" href="#about" data-value="about">About</a></li>
+          <li><a class="header__menu__item" href="#skills" data-value="skills"">Skills</a></li>
+          <li><a class="header__menu__item" href="#work" data-value="work">My work</a></li>
+          <li><a class="header__menu__item" href="#testimonial" data-value="testimonial">Testimonials</a></li>
+          <li><a class="header__menu__item" href="#contact" data-value="contact">Contact</a></li>
         </ul>
       </nav>
       <button class="header__toggle" aria-label="navigation menu toggle">
@@ -65,7 +66,7 @@
         <img class="home__avatar" src="images/profile.png" alt="BIS's profile" />
         <h2 class="home__title">Hello<br/>I&#39;m <strong class="home__title--strong">Dream Coder</strong>, BIS</h2>
         <p class="home__description">A software engineer currently residing in Seoul, South Korea</p>
-        <a class="home__contact" href="#contact">Contact Me</a>
+        <a href="#contact" class="home__contact">Contact Me</a>
       </div>
     </section>
     <!-- About -->
